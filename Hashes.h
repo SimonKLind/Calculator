@@ -1,3 +1,6 @@
+/** Hash functions for use with map 
+  * only string was ever needed for this so... */
+
 #ifndef HASHES_H
 #define HASHES_H
 
