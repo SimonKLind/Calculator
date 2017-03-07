@@ -1,3 +1,7 @@
+/** A basic hash map used for variables and functions 
+  * uses bitwise operations on chars to keep track of 
+  * which buckets are in use */
+
 #ifndef MAP_H
 #define MAP_H
 
