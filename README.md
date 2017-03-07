@@ -12,3 +12,5 @@ It can plot graphs from functions, several can be drawn at a time.
 [name]=[expression] is the syntax for assigning variables, anything starting with y (e.g 'y1', 'y2'...) will be considered a function to plot
 
 "plot [x-range] [y-range]" x-range and y-range will be absolute range of x and y axis, you can then zoom to adjust.
+
+A fun thing about this project is that everythin is implemented from scratch, except the OpenGL functionality, meaning every stack, map or dynamic array is implemented from scratch to fit this specific purpose.
