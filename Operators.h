@@ -1,3 +1,8 @@
+/** A class for all the mathematical operators.
+  * keeps its name as a string and the function to operate it.
+  * for single operand operators a dummy parameter is used
+  * to keep everything as same class */
+
 #ifndef OPERATORS_H
 #define OPERATORS_H
 
@@ -16,13 +21,16 @@ public:
 
 Map<std::string, Operator> Operators;
 
-
+// Some default operators used in the postfix class to distinguish left-parenthesis, number, and x
 Operator lPar = Operator([](double dummy1, double dummy2) ->  double { return 0; }, -1);
 Operator Num = Operator([](double dummy1, double dummy2) ->  double { return 0; }, -2);
 Operator X = Operator([](double dummy1, double dummy2) ->  double { return 0; }, -3);
 
+// Initialize function in its own namespace
 namespace OPERATORS{
 	const double pi = 3.14159265358979323846;
+	
+	/** Puts all currently existing operators in a global operators map */
 	void Initialize(){
 		Operators.add("+", Operator([](double arg1, double arg2) -> double { return arg1+arg2; }, 1));
 		Operators.add("-", Operator([](double arg1, double arg2) -> double { return arg1-arg2; }, 1));
