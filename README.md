@@ -13,4 +13,4 @@ It can plot graphs from functions, several can be drawn at a time.
 
 "plot [x-range] [y-range]" x-range and y-range will be absolute range of x and y axis, you can then zoom to adjust.
 
-A fun thing about this project is that everythin is implemented from scratch, except the OpenGL functionality, meaning every stack, map or dynamic array is implemented from scratch to fit this specific purpose.
+A fun thing about this project is that everythin is implemented from scratch, implying every stack, map or dynamic array is implemented from scratch to fit this specific purpose.
